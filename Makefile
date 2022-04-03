@@ -1,4 +1,4 @@
-SRCS = ft_printf.c \
+SRCS = ft_printf.c main.c \
 
 OBJ = $(SRCS:%c=%o)
 
@@ -17,14 +17,14 @@ $(NAME): $(OBJ)
 
 test: $(OBJ)
 	cd libft && make -s
-	$(CC) $(CFLAGS) -o test $(SRCS) libft/libft.a && make fclean -s
+	$(CC) $(CFLAGS) -o test $(SRCS) libft/libft.a
 
 clean:
 	$(RM) $(OBJ)
 	cd libft && make clean -s
 
 fclean: clean
-	$(RM) $(NAME)
+	$(RM) $(NAME) test
 	cd libft && make fclean -s
 
 re: fclean all
