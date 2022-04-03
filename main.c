@@ -6,7 +6,8 @@ int	main(int argc, char **argv)
 	if (argc == 2)
 	{
 		ft_printf((const char *)argv[1]);
-		printf("(real) %s", argv[1]);
+		if (ft_strlen(argv[1]) > 0)
+			printf("(real) %s", argv[1]);
 	}
 	else
 		printf("arg error");
