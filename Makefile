@@ -17,7 +17,7 @@ $(NAME): $(OBJ)
 
 test: $(OBJ)
 	cd libft && make -s
-	$(CC) $(CFLAGS) $(SRCS) libft/libft.a && ./a.out && $(RM) a.out && make fclean -s
+	$(CC) $(CFLAGS) -o test $(SRCS) libft/libft.a && make fclean -s
 
 clean:
 	$(RM) $(OBJ)
@@ -26,3 +26,5 @@ clean:
 fclean: clean
 	$(RM) $(NAME)
 	cd libft && make fclean -s
+
+re: fclean all
