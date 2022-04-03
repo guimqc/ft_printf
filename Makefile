@@ -17,7 +17,7 @@ $(NAME): $(OBJ)
 
 test: $(OBJ)
 	cd libft && make -s
-	$(CC) $(CFLAGS) -o test $(SRCS) libft/libft.a
+	$(CC) $(CFLAGS) -o test $(SRCS) libft/libft.a && ./test
 
 clean:
 	$(RM) $(OBJ)

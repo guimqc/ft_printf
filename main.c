@@ -1,14 +1,8 @@
 #include "printf.h"
 #include <stdio.h>
 
-int	main(int argc, char **argv)
+int	main()
 {
-	if (argc == 2)
-	{
-		ft_printf((const char *)argv[1]);
-		if (ft_strlen(argv[1]) > 0)
-			printf("(real) %s", argv[1]);
-	}
-	else
-		printf("arg error");
+	ft_printf("hello\n");
+	printf("hello\n");
 }
