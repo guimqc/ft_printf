@@ -8,4 +8,5 @@ int	main()
 	
 	// warning: data argument not used by format string
 	// printf("hello\n", age);
+	ft_printf("this %s a test to %d if my %c %p %i %u %x %X %%");
 }
