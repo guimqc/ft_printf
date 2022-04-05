@@ -8,10 +8,14 @@ int	main()
 	
 	// warning: data argument not used by format string
 	// printf("hello\n", age);
-	char *s = "this %s a test to %d if my %c %p %i %u %x %X %%\n";
-	int arg_count = count_arg(s);
+	char c = 'a';
+	char *s = "test";
+	int i = 9;
+	char *p = malloc(sizeof(char) * 1);
+	unsigned int u = 4294967295;
+	int x = 12;
+	int X = 12;
 
 	ft_printf("*********TEST RESULT*********\n");
-	printf("arg count: %i\n", arg_count);
-	ft_printf(s);
+	ft_printf("char=%c\nstring=%s\nint=%i\npointer=%p\nunsigned long=%u\nhexa_low=%x\nhexa_high=%X\n%%=%%\n", c, s, i, p, u, x, X);
 }
