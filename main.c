@@ -8,5 +8,10 @@ int	main()
 	
 	// warning: data argument not used by format string
 	// printf("hello\n", age);
-	ft_printf("this %s a test to %d if my %c %p %i %u %x %X %%");
+	char *s = "this %s a test to %d if my %c %p %i %u %x %X %%\n";
+	int arg_count = count_arg(s);
+
+	ft_printf("*********TEST RESULT*********\n");
+	printf("arg count: %i\n", arg_count);
+	ft_printf(s);
 }
