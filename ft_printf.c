@@ -1,5 +1,4 @@
 #include "printf.h"
-#include <stdio.h>
 #include <stdarg.h>
 
 void format_and_print(va_list arg_list, char format)

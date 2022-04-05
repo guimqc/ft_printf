@@ -20,5 +20,5 @@ int	main()
 	int X = 12;
 
 	ft_printf("*********TEST RESULT*********\n");
-	ft_printf("char=%c\nint=%i\ndeci=%d\nstring=%s\npointer=%p\nunsigned long=%u\nhexa_low=%x\nhexa_high=%X\n%%=%%\n", c, i, deci, s, p, u, x, X);
+	ft_printf("char=%c\nint=%i\ndeci=%d\nstring=%s\npointer=%p\nunsigned long=%u\nhexa_low=%x\nhexa_high=%X\n%%=%%\n", c, i, deci, s, p, u, itox(x), itox(X));
 }

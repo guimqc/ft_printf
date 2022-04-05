@@ -3,7 +3,8 @@
 
 #include "libft/libft.h"
 
-int ft_printf(const char *s, ...);
-int count_arg(char *s);
+int     ft_printf(const char *s, ...);
+int     count_arg(char *s);
+char    *itox(int n);
 
 # endif
