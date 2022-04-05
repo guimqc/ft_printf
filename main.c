@@ -13,11 +13,12 @@ int	main()
 	char c = 'a';
 	char *s = "test";
 	int i = 456;
+	int deci = 123;
 	char *p = malloc(sizeof(char) * 1);
 	unsigned int u = 4294967295;
 	int x = 12;
 	int X = 12;
 
 	ft_printf("*********TEST RESULT*********\n");
-	ft_printf("char=%c\nint=%i\nstring=%s\npointer=%p\nunsigned long=%u\nhexa_low=%x\nhexa_high=%X\n%%=%%\n", c, i, s, p, u, x, X);
+	ft_printf("char=%c\nint=%i\ndeci=%d\nstring=%s\npointer=%p\nunsigned long=%u\nhexa_low=%x\nhexa_high=%X\n%%=%%\n", c, i, deci, s, p, u, x, X);
 }
