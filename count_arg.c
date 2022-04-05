@@ -2,7 +2,7 @@
 
 int count_arg(char *s)
 {
-    size_t i;
+    int i;
     int count;
     int s_len;
 
