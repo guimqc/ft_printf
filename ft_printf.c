@@ -8,6 +8,10 @@ void format_and_print(va_list arg_list, char format)
 		write(1, "%", 1);
 	if (format == 'c')
 		ft_putchar_fd(va_arg(arg_list, int), 1);
+	if (format == 'i')
+		ft_putnbr_fd((va_arg(arg_list, int)), 1);
+	if (format == 's')
+		ft_putstr_fd(va_arg(arg_list, char *), 1);
 }
 
 int	ft_printf(const char *s, ...)
