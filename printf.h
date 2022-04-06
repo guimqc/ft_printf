@@ -7,6 +7,6 @@
 
 char	*itox(int n, int caps);
 int		ft_printf(const char *s, ...);
-void	format_and_print(va_list arg_list, char format);
+int	    format_and_print(va_list arg_list, char format);
 
 #endif

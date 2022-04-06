@@ -1,7 +1,10 @@
 #include "printf.h"
 
-void	format_and_print(va_list arg_list, char format)
+int	format_and_print(va_list arg_list, char format)
 {
+	int len;
+	
+	len = 0;
 	if (format == '%')
 		write(1, "%", 1);
 	if (format == 'c')
@@ -14,4 +17,5 @@ void	format_and_print(va_list arg_list, char format)
 		ft_putstr_fd(itox(va_arg(arg_list, int), 0), 1);
 	if (format == 'X')
 		ft_putstr_fd(itox(va_arg(arg_list, int), 1), 1);
+	return (len);
 }
