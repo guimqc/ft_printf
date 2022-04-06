@@ -1,7 +1,7 @@
 #include "printf.h"
 #include <stdarg.h>
 
-void format_and_print(va_list arg_list, char format)
+static void format_and_print(va_list arg_list, char format)
 {
 	if (format == '%')
 		write(1, "%", 1);
