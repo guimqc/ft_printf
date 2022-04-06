@@ -14,9 +14,9 @@ int	format_and_print(va_list arg_list, char format)
 	if (format == 's')
 		ft_putstr_fd(va_arg(arg_list, char *), 1);
 	if (format == 'x')
-		print_hex(va_arg(arg_list, int), 0);
+		len += print_hex(va_arg(arg_list, int), 0);
 	if (format == 'X')
-		print_hex(va_arg(arg_list, int), 1);
+		len += print_hex(va_arg(arg_list, int), 1);
 	if (format == 'p')
 		return (len);
 	return (len);
