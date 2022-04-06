@@ -31,5 +31,5 @@ int	main()
 	int str_len1 = printf("(hexa) %x\n", 123);
 	int my_str_len1 = ft_printf("(hexa) %x\n", 123);
 	printf("real return = %i\n", str_len1);
-	printf("my return = %i\n", my_str_len1);
+	printf("my return = %i\n\n", my_str_len1);
 }

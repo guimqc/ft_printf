@@ -1,6 +1,6 @@
 #include "printf.h"
 
-int	print_adress(int n)
+int	print_adress(long n)
 {
 	int len;
 	char *adress;
