@@ -11,16 +11,17 @@ int	main()
 	char *s = "test";
 	int i = 456;
 	int deci = 123;
-	int x = 1234;
-	int X = 1234;
-	char *p = malloc(sizeof(char) * 1);
+	int x = 45612322;
+	int X = 1234456;
+	char *p =  "hello";
 	unsigned int u = 4294967295;
 
 	ft_printf("*********TEST RESULT*********\n");
-	ft_printf("char=%c\nint=%i\ndeci=%d\nstring=%s\nhexa_low=%x\nhexa_high=%X\npointer=%p\nunsigned long=%u\n%%=%%\n\n", c, i, deci, s, x, X, p, u);
+	ft_printf("char= %c\nint= %i\ndeci= %d\nstring= %s\nhexa_low= %x\nhexa_high= %X\npointer= %p\nunsigned long= %u\n %%=%%\n\n", c, i, deci, s, x, X, p, u);
+	printf("pointer real = %p\n\n", p);
 
 	// printf returns the lengtht of the string it printed
-	printf("*****printf returns the length of what it printed*****\n");
+	printf("*****printf returns the length of what it prints*****\n");
 
 	int str_len = printf("(char) %c\n", 'v');
 	int my_str_len = ft_printf("(char) %c\n", 'v');

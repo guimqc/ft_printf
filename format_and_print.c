@@ -18,6 +18,8 @@ int	format_and_print(va_list arg_list, char format)
 	if (format == 'X')
 		len += print_hex(va_arg(arg_list, int), 1);
 	if (format == 'p')
-		return (len);
+		print_adress(va_arg(arg_list, int));
+	if (format == 'u')
+		return (0);
 	return (len);
 }

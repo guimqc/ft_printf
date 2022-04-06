@@ -8,6 +8,7 @@ int	print_hex(int n, int caps)
 	s = ft_itox(n, caps);
 	len = ft_strlen(s);
 	write(1, s, len);
+	free (s);
 
 	return (len);
 }
