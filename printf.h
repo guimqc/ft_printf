@@ -5,7 +5,7 @@
 # include <stdarg.h>
 # include <stdio.h>
 
-char	*itox(int n, int caps);
+void	print_hex(int n, int caps);
 int		ft_printf(const char *s, ...);
 int	    format_and_print(va_list arg_list, char format);
 
