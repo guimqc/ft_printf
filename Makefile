@@ -1,4 +1,4 @@
-SRCS = ft_printf.c count_arg.c itox.c main.c \
+SRCS = ft_printf.c itox.c format_and_print.c main.c \
 
 OBJ = $(SRCS:%c=%o)
 

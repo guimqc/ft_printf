@@ -1,5 +1,4 @@
 #include "printf.h"
-#include <stdio.h>
 
 int	main()
 {
@@ -14,11 +13,11 @@ int	main()
 	char *s = "test";
 	int i = 456;
 	int deci = 123;
+	int x = 1234;
+	int X = 1234;
 	char *p = malloc(sizeof(char) * 1);
 	unsigned int u = 4294967295;
-	int x = 12;
-	int X = 12;
 
 	ft_printf("*********TEST RESULT*********\n");
-	ft_printf("char=%c\nint=%i\ndeci=%d\nstring=%s\npointer=%p\nunsigned long=%u\nhexa_low=%x\nhexa_high=%X\n%%=%%\n", c, i, deci, s, p, u, itox(x), itox(X));
+	ft_printf("char=%c\nint=%i\ndeci=%d\nstring=%s\nhexa_low=%x\nhexa_high=%X\nunsigned long=%u\npointer=%p\n%%=%%\n", c, i, deci, s, x, X, p, u);
 }

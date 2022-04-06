@@ -1,39 +1,36 @@
-#include <stdio.h>
 #include "printf.h"
 
-static int find_len(int n)
+static int	find_len(int n)
 {
-	int len;
+	int	len;
 
 	len = 0;
+	if (n == 0)
+		return (1);
 	while (n > 0)
 	{
 		n /= 16;
 		len++;
 	}
-	return (len + 1);
+	return (len);
 }
 
-char *itox(int n, int caps)
+char	*itox(int n, int caps)
 {
-	(void) caps;
-	char *result;
-	char *hex = "0123456789abcdef";
-	int len;
+	int		len;
+	char	*hex;
+	char	*result;
 
 	len = find_len(n);
+	hex = "0123456789abcdef";
 	result = ft_calloc(len + 1, sizeof(char));
 	result[len] = '\0';
-	while (n > 1)
+	while (len-- > 0)
 	{
-		printf("%i\n", n % 16);
-		result[--len] = hex[n % 16];
+		result[len] = hex[n % 16];
+		if (caps == 1)	
+			result[len] = ft_toupper(hex[n % 16]);
 		n /= 16;
 	}
 	return (result);
-}
-
-int main()
-{
-	printf("%s\n", itox(123, 1));
 }
