@@ -6,14 +6,14 @@ int	main()
 	char *s = "test";
 	int i = 2147483647;
 	int d = -2147483648;
-	int x = -45612322;
-	int X = 1234456;
-	char *p =  "hello";
+	int x = 2147483647;
+	int X = -2147483648;
+	char *p =  "hello u";
 	unsigned int u = 4294967295;
 
 	// basic tests
 	ft_printf("*********TEST RESULT*********\n");
-	ft_printf("c = %c\ni = %i\nd = %d\ns = %s\nx = %x\nX = %X\np = %p\nu = %u\n %% = %%\n\n", c, i, d, s, x, X, p, u);
+	ft_printf("c = %c\ni = %i\nd = %d\ns = %s\nx = %x (neg doesn't work)\nX = %X\np = %p\nu = %u\n %% = %%\n\n", c, i, d, s, x, X, p, u);
 
 	printf("real c = %c\n", c);
 	printf("real i = %i\n", i);
