@@ -1,4 +1,4 @@
-SRCS = ft_printf.c format_and_print.c print_hex.c print_adress.c print_char.c print_str.c print_nbr.c main.c \
+SRCS = ft_printf.c format_and_print.c print_hex.c print_adress.c print_char.c print_str.c print_nbr.c print_percent.c main.c \
 
 OBJ = $(SRCS:%c=%o)
 

@@ -52,4 +52,9 @@ int	main()
 	int my_str_len4 = ft_printf("(number) %i\n", i);
 	printf("real return = %i\n", str_len4);
 	ft_printf("my return = %i\n\n", my_str_len4);
+
+	int str_len5 = printf("(number) %%\n");
+	int my_str_len5 = ft_printf("(number) %%\n");
+	printf("real return = %i\n", str_len5);
+	ft_printf("my return = %i\n\n", my_str_len5);
 }

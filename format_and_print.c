@@ -6,7 +6,7 @@ int	format_and_print(va_list arg_list, char format)
 
 	len = 0;
 	if (format == '%')
-		write(1, "%", 1);
+		len += print_percent();
 	if (format == 'c')
 		len += print_char(va_arg(arg_list, int));
 	if (format == 'i' || format == 'd')
