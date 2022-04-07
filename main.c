@@ -41,4 +41,9 @@ int	main()
 	int my_str_len3 = ft_printf("(string) %s\n", s);
 	printf("real return = %i\n", str_len3);
 	printf("my return = %i\n\n", my_str_len3);
+
+	int str_len4 = printf("(number) %i\n", i);
+	int my_str_len4 = ft_printf("(number) %i\n", i);
+	printf("real return = %i\n", str_len4);
+	printf("my return = %i\n\n", my_str_len4);
 }
