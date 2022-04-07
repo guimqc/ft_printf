@@ -1,6 +1,6 @@
 #include "printf.h"
 
-int	print_hex(int n, int caps)
+int	print_hex(unsigned int n, int caps)
 {
 	char	*s;
 	int		len;
