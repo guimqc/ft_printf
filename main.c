@@ -6,8 +6,8 @@ int	main()
 	char *s = "test";
 	int i = 2147483647;
 	int d = -2147483648;
-	int x = 2147483647;
-	int X = -2147483648;
+	int x = 123;
+	int X = 456;
 	char *p =  "hello u";
 	unsigned int u = 4294967295;
 
@@ -24,7 +24,6 @@ int	main()
 	printf("real p = %p\n", p);
 	printf("real u = %u\n", u);
 	printf("real %% = %%\n\n");
-
 
 	// printf returns the lengtht of the string it printed
 	printf("*****printf returns the length of what it prints*****\n");
