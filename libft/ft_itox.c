@@ -10,8 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+#include <stdio.h>
 
-static int	find_len(long n)
+static int	find_len(unsigned int n)
 {
 	int	len;
 
@@ -26,17 +27,17 @@ static int	find_len(long n)
 	return (len);
 }
 
-char	*ft_itox(long n, int caps)
+char	*ft_itox(unsigned int n, int caps)
 {
 	int		len;
 	char	*hex;
 	char	*result;
 
-	if (n == -2147483648)
-		write(1, "80000000", 8);
 	len = find_len(n);
 	hex = "0123456789abcdef";
 	result = ft_calloc(len + 1, sizeof(char));
+	if (!result)
+		return (NULL);
 	result[len] = '\0';
 	while (len-- > 0)
 	{
