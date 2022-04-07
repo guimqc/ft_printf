@@ -6,14 +6,16 @@ int	main()
 	char *s = "test";
 	int i = 456;
 	int deci = 123;
-	int x = 45612322;
-	int X = 1234456;
+	int x = -45612322;
+	int X = -1234456;
 	char *p =  "hello";
 	unsigned int u = 4294967295;
 
 	// basic tests
 	ft_printf("*********TEST RESULT*********\n");
-	ft_printf("char = %c\nint = %i\ndeci = %d\nstring = %s\nhexa_low = %x\nhexa_high = %X\npointer = %p\nunsigned long = %u\n %% = %%\n\n", c, i, deci, s, x, X, p, u);
+	ft_printf("char = %c\nint = %i\ndeci = %d\nstring = %s\nhexa_low = %x\nhexa_high = %X\npointer = %p\nunsigned int = %u\n %% = %%\n\n", c, i, deci, s, x, X, p, u);
+
+	printf("real unsigned int %u\n\n", u);
 
 	// printf returns the lengtht of the string it printed
 	printf("*****printf returns the length of what it prints*****\n");
