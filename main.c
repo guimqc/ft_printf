@@ -13,7 +13,7 @@ int	main()
 
 	// basic tests
 	ft_printf("*********TEST RESULT*********\n");
-	ft_printf("c = %c\ni = %i\nd = %d\ns = %s\nx = %x (neg doesn't work)\nX = %X\np = %p\nu = %u\n%% = %%\n\n", c, i, d, s, x, X, p, u);
+	ft_printf("c = %c\ni = %i\nd = %d\ns = %s\nx = %x\nX = %X\np = %p\nu = %u\n%% = %%\n\n", c, i, d, s, x, X, p, u);
 
 	printf("real c = %c\n", c);
 	printf("real i = %i\n", i);
