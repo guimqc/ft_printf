@@ -2,10 +2,10 @@
 
 int	print_adress(long n)
 {
-	int len;
-	char *adress;
-	char *prefix;
-	char *hexa;
+	int		len;
+	char	*adress;
+	char	*prefix;
+	char	*hexa;
 
 	hexa = ft_itox(n, 0);
 	prefix = "0x";
@@ -14,6 +14,5 @@ int	print_adress(long n)
 	write(1, adress, len);
 	free (hexa);
 	free (adress);
-
 	return (len);
 }

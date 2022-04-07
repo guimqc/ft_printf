@@ -3,7 +3,7 @@
 int	ft_printf(const char *s, ...)
 {
 	int		i;
-	int 	len;
+	int		len;
 	va_list	arg_list;
 
 	va_start(arg_list, s);

@@ -2,8 +2,8 @@
 
 int	format_and_print(va_list arg_list, char format)
 {
-	int len;
-	
+	int	len;
+
 	len = 0;
 	if (format == '%')
 		write(1, "%", 1);
