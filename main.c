@@ -16,6 +16,7 @@ int	main()
 	char *p =  "hello";
 	unsigned int u = 4294967295;
 
+	// basic tests
 	ft_printf("*********TEST RESULT*********\n");
 	ft_printf("char = %c\nint = %i\ndeci = %d\nstring = %s\nhexa_low = %x\nhexa_high = %X\npointer = %p\nunsigned long = %u\n %% = %%\n\n", c, i, deci, s, x, X, p, u);
 
