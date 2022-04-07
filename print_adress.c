@@ -16,5 +16,3 @@ int	print_adress(long n)
 	free (adress);
 	return (len);
 }
-
-// use strlcat and strlcpy to malloc one less time
