@@ -53,8 +53,8 @@ int	main()
 	printf("real return = %i\n", str_len4);
 	ft_printf("my return = %i\n\n", my_str_len4);
 
-	int str_len5 = printf("(number) %%\n");
-	int my_str_len5 = ft_printf("(number) %%\n");
+	int str_len5 = printf("(percent) %%\n");
+	int my_str_len5 = ft_printf("(percent) %%\n");
 	printf("real return = %i\n", str_len5);
 	ft_printf("my return = %i\n\n", my_str_len5);
 }
