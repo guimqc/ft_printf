@@ -20,6 +20,6 @@ int	format_and_print(va_list arg_list, char format)
 	if (format == 'p')
 		len += print_adress(va_arg(arg_list, long));
 	if (format == 'u')
-		return (0);
+		return ;
 	return (len);
 }

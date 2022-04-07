@@ -5,7 +5,7 @@
 # include <stdarg.h>
 # include <stdio.h>
 
-int		print_nbr(long n);
+int		print_nbr(int n);
 int		print_char(char c);
 int		print_str(char *s);
 int		print_adress(long n);
