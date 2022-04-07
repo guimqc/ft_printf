@@ -6,6 +6,7 @@
 # include <stdio.h>
 
 int     print_char(char c);
+int     print_str(char *s);
 int     print_adress(long n);
 int	    print_hex(int n, int caps);
 int		ft_printf(const char *s, ...);

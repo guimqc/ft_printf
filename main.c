@@ -17,7 +17,7 @@ int	main()
 	unsigned int u = 4294967295;
 
 	ft_printf("*********TEST RESULT*********\n");
-	ft_printf("char= %c\nint= %i\ndeci= %d\nstring= %s\nhexa_low= %x\nhexa_high= %X\npointer= %p\nunsigned long= %u\n %%=%%\n\n", c, i, deci, s, x, X, p, u);
+	ft_printf("char = %c\nint = %i\ndeci = %d\nstring = %s\nhexa_low = %x\nhexa_high = %X\npointer = %p\nunsigned long = %u\n %% = %%\n\n", c, i, deci, s, x, X, p, u);
 
 	// printf returns the lengtht of the string it printed
 	printf("*****printf returns the length of what it prints*****\n");
@@ -36,4 +36,9 @@ int	main()
 	int my_str_len2 = ft_printf("(pointer) %p\n", p);
 	printf("real return = %i\n", str_len2);
 	printf("my return = %i\n\n", my_str_len2);
+
+	int str_len3 = printf("(string) %s\n", s);
+	int my_str_len3 = ft_printf("(string) %s\n", s);
+	printf("real return = %i\n", str_len3);
+	printf("my return = %i\n\n", my_str_len3);
 }
