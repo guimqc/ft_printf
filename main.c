@@ -28,8 +28,8 @@ int	main()
 	// printf returns the lengtht of the string it printed
 	printf("*****printf returns the length of what it prints*****\n");
 
-	int str_len = printf("(char) %c\n", 'v');
-	int my_str_len = ft_printf("(char) %c\n", 'v');
+	int str_len = printf("(char) %c\n", c);
+	int my_str_len = ft_printf("(char) %c\n", c);
 	printf("real return = %i\n", str_len);
 	ft_printf("my return = %i\n\n", my_str_len);
 
@@ -53,10 +53,15 @@ int	main()
 	printf("real return = %i\n", str_len3);
 	ft_printf("my return = %i\n\n", my_str_len3);
 
-	int str_len4 = printf("(number) %i\n", i);
-	int my_str_len4 = ft_printf("(number) %i\n", i);
+	int str_len4 = printf("(int) %i\n", i);
+	int my_str_len4 = ft_printf("(int) %i\n", i);
 	printf("real return = %i\n", str_len4);
 	ft_printf("my return = %i\n\n", my_str_len4);
+
+	int str_len8 = printf("(d) %d\n", d);
+	int my_str_len8 = ft_printf("(d) %d\n", d);
+	printf("real return = %i\n", str_len8);
+	ft_printf("my return = %i\n\n", my_str_len8);
 
 	int str_len5 = printf("(percent) %%\n");
 	int my_str_len5 = ft_printf("(percent) %%\n");
