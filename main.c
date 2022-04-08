@@ -11,7 +11,7 @@ int	main()
 	int d = -2147483648;
 	int x = 2147483647;
 	int X = -2147483648;
-	void *p = NULL;
+	void *p = "hello u";
 	unsigned int u = 4294967295;
 
 	// basic tests

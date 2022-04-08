@@ -1,6 +1,6 @@
 #include "printf.h"
 
-int	print_str(char *s)
+int	print_s(char *s)
 {
 	int	len;
 

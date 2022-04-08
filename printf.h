@@ -7,11 +7,11 @@
 
 int     print_percent();
 int		print_nbr(int n);
-int		print_char(char c);
-int		print_str(char *s);
-int		print_adress(long n);
+int		print_c(char c);
+int		print_s(char *s);
+int		print_p(long n);
 int		print_u(unsigned int);
-int		print_hex(unsigned int n, int caps);
+int		print_x(unsigned int n, int caps);
 int		ft_printf(const char *s, ...);
 int		format_and_print(va_list arg_list, char format);
 
