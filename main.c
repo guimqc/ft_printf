@@ -1,5 +1,8 @@
 #include "ft_printf.h"
 
+// category p:
+// LONG_MIN LONG_MAX ULONG_MA, -ULONG_MAX
+
 int	main()
 {
 	char c = 'a';
@@ -8,7 +11,7 @@ int	main()
 	int d = -2147483648;
 	int x = 2147483647;
 	int X = -2147483648;
-	char *p =  "hello u";
+	void *p = NULL;
 	unsigned int u = 4294967295;
 
 	// basic tests

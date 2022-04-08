@@ -1,4 +1,4 @@
-SRCS =	ft_printf.c format_and_print.c print_hex.c print_adress.c print_char.c print_str.c print_nbr.c print_percent.c print_u.c main.c \
+SRCS =	ft_printf.c format_and_print.c print_hex.c print_adress.c print_char.c print_str.c print_nbr.c print_percent.c print_u.c \
 
 OBJ = $(SRCS:%c=%o)
 
@@ -22,7 +22,7 @@ all: $(NAME)
 
 test:
 	$(MAKELIB)
-	$(CC) $(CFLAGS) -o test $(SRCS) libft/libft.a && ./test && rm test && make fclean
+	$(CC) $(CFLAGS) -o test $(SRCS) main.c libft/libft.a && ./test && rm test && make fclean
 
 clean:
 	$(RM) $(OBJ)
