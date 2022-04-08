@@ -8,6 +8,7 @@ int print_u(unsigned int n)
     result = ft_itoa(n);
     len = ft_strlen(result);
     write(1, result, len);
+    free (result);
 
     return (len);
 }
