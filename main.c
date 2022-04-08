@@ -57,4 +57,9 @@ int	main()
 	int my_str_len5 = ft_printf("(percent) %%\n");
 	printf("real return = %i\n", str_len5);
 	ft_printf("my return = %i\n\n", my_str_len5);
+
+	int str_len6 = printf("(u) %u\n", u);
+	int my_str_len6 = ft_printf("(u) %u\n", u);
+	printf("real return = %i\n", str_len6);
+	ft_printf("my return = %i\n\n", my_str_len6);
 }
