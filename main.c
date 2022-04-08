@@ -6,8 +6,8 @@ int	main()
 	char *s = "test";
 	int i = 2147483647;
 	int d = -2147483648;
-	int x = -123;
-	int X = 456;
+	int x = 2147483647;
+	int X = -2147483648;
 	char *p =  "hello u";
 	unsigned int u = 4294967295;
 
