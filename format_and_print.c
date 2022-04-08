@@ -1,4 +1,4 @@
-#include "ft_printf.h"
+#include "printf.h"
 
 int	format_and_print(va_list arg_list, char format)
 {
