@@ -3,7 +3,7 @@
 int	main()
 {
 	char c = 'a';
-	char *s = "test";
+	char *s = NULL;
 	int i = 2147483647;
 	int d = -2147483648;
 	int x = 2147483647;
@@ -37,6 +37,11 @@ int	main()
 	int my_str_len1 = ft_printf("(hexa) %x\n", x);
 	printf("real return = %i\n", str_len1);
 	ft_printf("my return = %i\n\n", my_str_len1);
+	
+	int str_len7 = printf("(HEXA) %X\n", X);
+	int my_str_len7 = ft_printf("(HEXA) %X\n", X);
+	printf("real return = %i\n", str_len7);
+	ft_printf("my return = %i\n\n", my_str_len7);
 
 	int str_len2 = printf("(pointer) %p\n", p);
 	int my_str_len2 = ft_printf("(pointer) %p\n", p);
