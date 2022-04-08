@@ -1,6 +1,8 @@
-SRCS = ft_printf.c format_and_print.c print_hex.c print_adress.c print_char.c print_str.c print_nbr.c print_percent.c print_u.c main.c \
+SRCS =	ft_printf.c format_and_print.c print_hex.c print_adress.c print_char.c print_str.c print_nbr.c print_percent.c print_u.c main.c \
 
 OBJ = $(SRCS:%c=%o)
+
+LIBOBJ = libft/ft_strlen.o libft/ft_calloc.o libft/ft_bzero.o libft/ft_strjoin.o libft/ft_itoa.o libft/ft_itox.o libft/ft_toupper.o \
 
 NAME = libftprintf.a
 
@@ -10,13 +12,16 @@ CFLAGS = -Wall -Werror -Wextra
 
 RM = rm -f
 
-all: $(NAME)
+MAKELIB = cd libft && make -s
 
 $(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
+	$(MAKELIB)
+	ar rcs $(NAME) $(OBJ) $(LIBOBJ)
 
-test: $(OBJ)
-	cd libft && make -s
+all: $(NAME)
+
+test:
+	$(MAKELIB)
 	$(CC) $(CFLAGS) -o test $(SRCS) libft/libft.a && ./test && rm test && make fclean
 
 clean:
