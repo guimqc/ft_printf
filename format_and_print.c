@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   format_and_print.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gvial <marvin@42quebec.com>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/04/09 18:50:11 by gvial             #+#    #+#             */
+/*   Updated: 2022/04/09 18:50:14 by gvial            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "printf.h"
 
 int	format_and_print(va_list arg_list, char format)
@@ -20,6 +32,6 @@ int	format_and_print(va_list arg_list, char format)
 	if (format == 'p')
 		len += print_p(va_arg(arg_list, unsigned long));
 	if (format == 'u')
-		len+= print_u(va_arg(arg_list, unsigned int));
+		len += print_u(va_arg(arg_list, unsigned int));
 	return (len);
 }
