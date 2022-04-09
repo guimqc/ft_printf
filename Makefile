@@ -21,6 +21,10 @@ $(NAME): $(OBJ)
 
 all: $(NAME)
 
+test:
+	$(MAKELIB)
+	$(CC) $(CFLAGS) -o test main.c $(SRCS) libft/libft.a && ./test && rm test && make fclean
+
 clean:
 	$(RM) $(OBJ)
 	cd libft && make clean -s

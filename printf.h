@@ -15,6 +15,7 @@
 
 # include "libft/libft.h"
 # include <stdarg.h>
+# include <stdio.h>
 
 int		print_percent(void);
 int		print_c(char c);
