@@ -5,7 +5,7 @@ int print_u(unsigned int n)
     char *result;
     int len;
 
-    result = ft_itoa(n);
+    result = ft_ltoa(n);
     len = ft_strlen(result);
     write(1, result, len);
     free (result);

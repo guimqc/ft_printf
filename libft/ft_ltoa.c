@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_ltoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gvial <marvin@42quebec.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-static int	find_len(int n)
+static int	find_len(long n)
 {
 	int	i;
 
@@ -28,7 +28,7 @@ static int	find_len(int n)
 	return (i);
 }
 
-char	*ft_itoa(int n)
+char	*ft_ltoa(long n)
 {
 	char	*s;
 	int		i;
@@ -37,8 +37,6 @@ char	*ft_itoa(int n)
 	neg = 0;
 	i = find_len(n);
 	s = ft_calloc(find_len(n) + 1, sizeof(char));
-	if (n == -2147483648)
-		return (ft_memcpy(s, "-2147483648", 11));
 	if (!s)
 		return (NULL);
 	if (n < 0)
