@@ -24,10 +24,7 @@ int	ft_printf(const char *s, ...)
 	while (s[++i])
 	{
 		if (s[i] != '%')
-		{
-			write(1, &s[i], 1);
-			len++;
-		}
+			len += print_c(s[i]);
 		if ((s[i] == '%') && (s[i + 1] == 'c' || s[i + 1] == 's'
 				|| s[i + 1] == 'p' || s[i + 1] == 'd' || s[i + 1] == 'i'
 				|| s[i + 1] == 'u' || s[i + 1] == 'x' || s[i + 1] == 'X'
