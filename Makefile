@@ -15,11 +15,11 @@ RM = rm -f
 
 MAKELIB = cd libft && make -s
 
+all: $(NAME)
+
 $(NAME): $(OBJ)
 	$(MAKELIB)
 	ar rcs $(NAME) $(OBJ) $(LIBOBJ)
-
-all: $(NAME)
 
 test:
 	$(MAKELIB)
