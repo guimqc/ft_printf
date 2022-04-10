@@ -1,8 +1,5 @@
 #include "printf.h"
 
-// category p:
-// LONG_MIN LONG_MAX ULONG_MA, -ULONG_MAX
-
 int	main()
 {
 	char c = 'a';
