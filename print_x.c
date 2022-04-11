@@ -19,7 +19,7 @@ int	print_x(unsigned int n, int caps)
 
 	if (n < 0)
 		n = (n * -1) + 1;
-	s = ft_itox(n, caps);
+	s = ft_ltox(n, caps);
 	len = ft_strlen(s);
 	write(1, s, len);
 	free (s);
