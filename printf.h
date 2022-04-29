@@ -25,6 +25,6 @@ int		print_u(unsigned int n);
 int		print_p(unsigned long n);
 int		ft_printf(const char *s, ...);
 int		print_x(unsigned int n, int caps);
-int		format_and_print(va_list arg_list, char format);
+int		format_and_print(va_list *arg_list, char format);
 
 #endif
